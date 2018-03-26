@@ -37,6 +37,7 @@ function placeOrder(cardNumber) {
 }
 
 
+
 function viewCart(){
  var total = [];
  var ammount = cart.length;
