@@ -74,7 +74,6 @@ function total(){
       return totals;
 }
 
-total();
 
 function removeFromCart(item){
 var ammount = cart.length;
