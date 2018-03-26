@@ -33,7 +33,24 @@ function placeOrder(cardNumber) {
 }
 
 function viewCart(){
+ var total = [];
+ var ammount = cart.length;
+ var checkCart = {};
   if (cart.length === 0){
-    return `Your shopping cart is empty.`
+    return `Your shopping cart is empty.`;
   }
+  else {
+    for (var i = 0; i < ammount; i++){
+    checkCart = cart[i];
+    console.log(checkCart) ;
+    if(i < cart.length - 1){
+    total.push(` ${checkCart.itemName} at ${checkCart.itemPrice}` );
+    }
+    else{
+    total.push(` and ${checkCart.itemName} at ${checkCart.itemPrice}.` );
+
+    }
+    }
+  }
+  return `In your cart, you have${total}`;
 }
