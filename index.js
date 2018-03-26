@@ -67,7 +67,7 @@ function viewCart(){
 
 function total(){
   var ammount = cart.length;
-
+  var checkCart = {}
       for (var i = 0; i < ammount; i++){
        checkCart = cart[i];
        console.log(checkCart.itemPrice);
