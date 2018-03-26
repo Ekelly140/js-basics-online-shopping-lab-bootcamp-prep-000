@@ -70,8 +70,6 @@ function total(){
   var checkCart = {}
       for (var i = 0; i < ammount; i++){
        checkCart = cart[i];
-       console.log(checkCart.itemPrice);
-
        totals += checkCart.itemPrice;
       }
       return totals;
