@@ -62,11 +62,15 @@ function viewCart(){
 }
 
 function total(){
-  var total = 0
+  var total = 0;
+  var ammount = cart.length;
+
       for (var i = 0; i < ammount; i++){
        checkCart = cart[i];
-       total =+ checkCart.itemPrice
+       console.log(checkCart.itemPrice);
+
+       total += checkCart.itemPrice;
       }
-      return total
+      return total;
 }
 
