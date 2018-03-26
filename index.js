@@ -98,6 +98,7 @@ function placeOrder(cc){
    return "Sorry, we don't have a credit card on file for you." ;
   }
   else{
+  cart =[]
   return `Your total cost is $${totals}, which will be charged to the card ${cc}.`;
   }
 }
