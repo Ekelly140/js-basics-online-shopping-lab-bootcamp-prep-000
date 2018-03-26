@@ -33,10 +33,6 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-addToCart("milk");
-addToCart("eggs");
-addToCart("ham");
-cart;
 
 function viewCart(){
  var total = [];
@@ -53,7 +49,7 @@ function viewCart(){
     total.push(` ${checkCart.itemName} at $${checkCart.itemPrice}` );
     }
     else if(i===0){
-      total.push(` and ${checkCart.itemName} at $${checkCart.itemPrice}.` );
+      total.push(` ${checkCart.itemName} at $${checkCart.itemPrice}.` );
 
     }
     else{
