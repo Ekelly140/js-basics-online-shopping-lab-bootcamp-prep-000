@@ -52,6 +52,10 @@ function viewCart(){
     if(i < cart.length - 1){
     total.push(` ${checkCart.itemName} at $${checkCart.itemPrice}` );
     }
+    else if(i===0){
+      total.push(` and ${checkCart.itemName} at $${checkCart.itemPrice}.` );
+
+    }
     else{
     total.push(` and ${checkCart.itemName} at $${checkCart.itemPrice}.` );
 
