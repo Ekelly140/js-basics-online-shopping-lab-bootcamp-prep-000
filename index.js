@@ -1,6 +1,6 @@
 var cart = [];
-var totals = 0;
 var newCart = {};
+var totals = 0;
 
 
 function getCart() {
@@ -37,6 +37,7 @@ function placeOrder(cardNumber) {
 }
 
 
+
 function viewCart(){
  var total = [];
  var ammount = cart.length;
@@ -66,7 +67,6 @@ function viewCart(){
 
 function total(){
   var ammount = cart.length;
-  var checkCart = {}
 
       for (var i = 0; i < ammount; i++){
        checkCart = cart[i];
@@ -76,4 +76,5 @@ function total(){
       }
       return totals;
 }
+
 
