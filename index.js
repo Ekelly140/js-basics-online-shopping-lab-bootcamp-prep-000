@@ -50,10 +50,10 @@ function viewCart(){
     checkCart = cart[i];
     console.log(checkCart) ;
     if(i < cart.length - 1){
-    total.push(` ${checkCart.itemName} at ${checkCart.itemPrice}` );
+    total.push(` ${checkCart.itemName} at $${checkCart.itemPrice}` );
     }
     else{
-    total.push(` and ${checkCart.itemName} at ${checkCart.itemPrice}.` );
+    total.push(` and ${checkCart.itemName} at $${checkCart.itemPrice}.` );
 
     }
     }
