@@ -72,7 +72,7 @@ function total(){
        checkCart = cart[i];
        console.log(checkCart.itemPrice);
 
-       total += checkCart.itemPrice;
+       totals += checkCart.itemPrice;
       }
       return totals;
 }
