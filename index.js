@@ -37,7 +37,6 @@ function placeOrder(cardNumber) {
 }
 
 
-
 function viewCart(){
  var total = [];
  var ammount = cart.length;
@@ -48,7 +47,6 @@ function viewCart(){
   else {
     for (var i = 0; i < ammount; i++){
     checkCart = cart[i];
-    console.log(checkCart) ;
     if(i < cart.length - 1){
     total.push(` ${checkCart.itemName} at $${checkCart.itemPrice}` );
     }
@@ -67,14 +65,15 @@ function viewCart(){
 
 function total(){
   var ammount = cart.length;
-  var checkCart = {}
-  totals = 0
+
       for (var i = 0; i < ammount; i++){
        checkCart = cart[i];
        totals += checkCart.itemPrice;
       }
       return totals;
 }
+
+total();
 
 function removeFromCart(item){
 var ammount = cart.length;
@@ -89,5 +88,6 @@ var checkCart = {};
   }
   return `That item is not in your cart.`;
 }
+ re
 
 
