@@ -93,9 +93,15 @@ var checkCart = {};
   return `That item is not in your cart.`;
 }
 
-placeOrder(cc){
-  
+function placeOrder(cc){
+  if(cc === undefined){
+   return "Sorry, we don't have a credit card on file for you." ;
+  }
+  else{
+  return `Your total cost is $${totals}, which will be charged to the card ${cc}.`;
+  }
 }
+
 
 
 
