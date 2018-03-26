@@ -84,7 +84,7 @@ var checkCart = {};
   checkCart = cart[i];
   if(item === checkCart.itemName){
     console.log(i)
-  cart.splice(i,1);
+    cart.splice(i,1);
 
     return cart;
 
