@@ -88,6 +88,5 @@ var checkCart = {};
   }
   return `That item is not in your cart.`;
 }
- re
 
 
