@@ -61,3 +61,12 @@ function viewCart(){
   return `In your cart, you have${total}`;
 }
 
+function total(){
+  var total = 0
+      for (var i = 0; i < ammount; i++){
+       checkCart = cart[i];
+       total =+ checkCart.itemPrice
+      }
+      return total
+}
+
