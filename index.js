@@ -1,8 +1,11 @@
 var cart = [];
+var totals = 0;
+var newCart = {};
+
+
 function getCart() {
  return cart;
 }
-var newCart = {};
 
 function setCart(c) {
   cart = c;
@@ -62,7 +65,6 @@ function viewCart(){
 }
 
 function total(){
-  var total = 0;
   var ammount = cart.length;
   var checkCart = {}
 
@@ -72,6 +74,6 @@ function total(){
 
        total += checkCart.itemPrice;
       }
-      return total;
+      return totals;
 }
 
